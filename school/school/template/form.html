@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+   <form method="post" class="p-3 shadow">
+      {% csrf_token %}
+      <input type="text" name="Name" placeholder="Enter your Name"><br>
+      <input type="date" name="Dob" placeholder="Enter your Date of birth"><br>
+      <input type="radio" name="Gender" value="male">Male<br>
+      <input type="radio" name="Gender" value="female">Female<br>
+      <input type="number" name="Phone No" placeholder="Enter your contact no"><br>
+      <input type="email" name="Email" placeholder="Enter your mail id"><br>
+      <input type="text" name="Address" placeholder="Enter your address"><br>
+        <label for="dept">Department</label><br>
+        <select name="Departments" id="dept">
+            <option value="computer science">Computer Science</option>
+                  <option value="computer science">Bsc</option>
+                  <option value="computer science">Msc</option>
+                  <option value="computer science">Btech</option>
+                  <option value="computer science">Phd</option>
+            <option value="commerce">Commerce</option>
+                  <option value="computer science">Bsc</option>
+                  <option value="computer science">Msc</option>
+                  <option value="computer science">Btech</option>
+                  <option value="computer science">Phd</option>
+            <option value="history">History</option>
+                   <option value="computer science">Bsc</option>
+                   <option value="computer science">Msc</option>
+                   <option value="computer science">Btech</option>
+                   <option value="computer science">Phd</option>
+            <option value="malayalam">Malayalam</option>
+                   <option value="computer science">Bsc</option>
+                   <option value="computer science">Msc</option>
+                   <option value="computer science">Btech</option>
+                   <option value="computer science">Phd</option>
+            <option value="english">English</option>
+                   <option value="computer science">Bsc</option>
+                   <option value="computer science">Msc</option>
+                   <option value="computer science">Btech</option>
+                   <option value="computer science">Phd</option>
+        </select>
+        <label for="purpose">Purpose</label>
+        <select name="Purpose"  id="purpose"></select>
+            <option value="enquiry">Enquiry</option>
+            <option value="place order">Place Order</option>
+            <option value="return">Return</option>
+      <input type="checkbox" name="Material Provided" value="Book"><br>
+      <input type="checkbox" name="Material Provided" value="Note Book"><br>
+      <input type="checkbox" name="Material Provided" value="Record"><br>
+      <input type="checkbox" name="Material Provided" value="Exam Paper">
+      <input type="submit">
+    </form>
+</body>
+</html>
